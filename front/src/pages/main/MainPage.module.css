@@ -1,0 +1,31 @@
+/* pages/main/MainPage.module.css */
+.container {
+    padding: 0 2rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .link {
+    color: inherit;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+  
+  .hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
