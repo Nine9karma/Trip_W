@@ -1,12 +1,13 @@
 // pages/main/index.js
 import styles from './MainPage.module.css';
 import Link from 'next/link';
+import { FaArrowRight } from 'react-icons/fa';
 
 export default function MainPage() {
   return (
-    <div className={styles.container}>
+    <div>
       <header className={styles.header}>
-        <h1>My Website</h1>
+        <h1>Travel Wise</h1>
         <nav>
           <Link href="/" className={styles.link}>
             Home
@@ -19,9 +20,22 @@ export default function MainPage() {
           </Link>
         </nav>
       </header>
-      <main className={styles.hero}>
-        <h1>Welcome to My Website</h1>
-      </main>
+      <div className={styles.container}>
+        <main className={styles.hero}>
+          <div className={styles['hero-overlay']}>
+            <h1>Experience your new Travel planning.</h1>
+            <div className={styles['button-container']}>
+              <a href="#" className={styles.button}>
+                계획하기
+                <FaArrowRight className={styles['button-icon']} />
+              </a>
+            </div>
+          </div>
+        </main>
+        <footer className={styles.footer}>
+          <p>&copy; 2024 My Website. All rights reserved.</p>
+        </footer>
+      </div>
     </div>
   );
 }
